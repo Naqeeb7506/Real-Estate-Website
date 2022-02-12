@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Content</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        .main-box {
+            border: 2px solid red;
+            display: block;
+            padding-left: 100px;
+        }
+
+        .box {
+            /* border: 2px solid green; */
+            display: inline-block;
+            border-radius: 20px;
+            margin: 30px 20px;
+            width: 400px;
+        }
+
+        .img-box {
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            margin: 0px auto;
+
+        }
+
+        .img-box img {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            border-radius: 20px;
+        }
+
+        .detail {
+            border: 2px solid grey;
+            width: 300px;
+            height: 70px;
+            display: flex;
+            align-items: centre;
+            justify-content: space-between;
+        }
+
+        .type {
+            display: flex;
+            flex-direction: column;
+            padding-left: 10px;
+        }
+
+        .type a {
+
+            text-decoration: none;
+            color: #222222;
+            margin: 5px 0px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+
+
+        }
+
+        .type span {
+            color: rgba(26, 26, 26, 0.5);
+        }
+
+        .price {
+            float: right;
+            color: rgb(0, 0, 0);
+            font-size: 1.3rem;
+            padding-right: 10px;
+
+        }
+
+        .btn-layer {
+            position: absolute;
+            /* display: none; */
+            width:295px;
+            display: flex;
+            height: 66px;
+            background-color: rgba(92, 95, 236, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+        }
+
+        .buy-btn {
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            background-color: pink;
+            width: 90px;
+            height: 25px;
+            border-radius: 7px;
+            text-align: center;
+        }
+        .buy-btn:hover{
+        color: #ffffff;
+        background-color: #f15fa3;
+        transition: all ease 0.3s;
+    }
+    .btn-layer{
+        visibility: hidden;
+        
+    }
+    .detail:hover .btn-layer {
+        visibility: visible;
+        animation: fade 0.5s;
+    }
+    </style>
+</head>
+
+<body>
+    <section class="main-box">
+        <!-- 1 content  -->
+        <div class="box">
+            <div class="img-box">
+                <img src="img/img13.jpg" alt="Image">
+
+            </div>
+            <!-- detail box -->
+            <div class="detail">
+                <Div class="btn-layer">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                </Div>
+                <!-- address  -->
+                <div class="type">
+                    <a href="#">Mumbai</a>
+                    <span>BKC</span>
+                </div>
+                <a href="#" class="price">Price $25</a>
+
+            </div>
+            <!-- <Div class="btn-layer">
+                <a href="#" class="buy-btn">Buy Now</a>
+            </Div> -->
+        </div>
+        <!-- 2 content  -->
+        <div class="box">
+            <div class="img-box">
+                <img src="img/img1.jpg" alt="Image">
+
+            </div>
+            <!-- detail box -->
+            <div class="detail">
+                <Div class="btn-layer">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                </Div>
+                <!-- address  -->
+                <div class="type">
+                    <a href="#">Mumbai</a>
+                    <span>BKC</span>
+                </div>
+                <a href="#" class="price">Price $25</a>
+
+            </div>
+            <!-- <Div class="btn-layer">
+                <a href="#" class="buy-btn">Buy Now</a>
+            </Div> -->
+        </div>
+        <!-- 3 content  -->
+        <div class="box">
+            <div class="img-box">
+                <img src="img/img2.jpg" alt="Image">
+
+            </div>
+            <!-- detail box -->
+            <div class="detail">
+                <Div class="btn-layer">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                </Div>
+                <!-- address  -->
+                <div class="type">
+                    <a href="#">Mumbai</a>
+                    <span>BKC</span>
+                </div>
+                <a href="#" class="price">Price $25</a>
+
+            </div>
+            <!-- <Div class="btn-layer">
+                <a href="#" class="buy-btn">Buy Now</a>
+            </Div> -->
+        </div>
+        <!-- 4 content  -->
+        <div class="box">
+            <div class="img-box">
+                <img src="img/img8.jpg" alt="Image">
+
+            </div>
+            <!-- detail box -->
+            <div class="detail">
+                <Div class="btn-layer">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                </Div>
+                <!-- address  -->
+                <div class="type">
+                    <a href="#">Mumbai</a>
+                    <span>BKC</span>
+                </div>
+                <a href="#" class="price">Price $25</a>
+
+            </div>
+            <!-- <Div class="btn-layer">
+                <a href="#" class="buy-btn">Buy Now</a>
+            </Div> -->
+        </div>
+        <!-- 5 content  -->
+        <div class="box">
+            <div class="img-box">
+                <img src="img/img10.jpg" alt="Image">
+
+            </div>
+            <!-- detail box -->
+            <div class="detail">
+                <Div class="btn-layer">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                </Div>
+                <!-- address  -->
+                <div class="type">
+                    <a href="#">Mumbai</a>
+                    <span>BKC</span>
+                </div>
+                <a href="#" class="price">Price $25</a>
+
+            </div>
+            <!-- <Div class="btn-layer">
+                <a href="#" class="buy-btn">Buy Now</a>
+            </Div> -->
+        </div>
+        <!-- 6 content  -->
+        <div class="box">
+            <div class="img-box">
+                <img src="img/img5.jpg" alt="Image">
+
+            </div>
+            <!-- detail box -->
+            <div class="detail">
+                <Div class="btn-layer">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                </Div>
+                <!-- address  -->
+                <div class="type">
+                    <a href="#">Mumbai</a>
+                    <span>BKC</span>
+                </div>
+                <a href="#" class="price">Price $25</a>
+
+            </div>
+            <!-- <Div class="btn-layer">
+                <a href="#" class="buy-btn">Buy Now</a>
+            </Div> -->
+        </div>
+        <!-- 7 content  -->
+        <div class="box">
+            <div class="img-box">
+                <img src="img/img6.jpg" alt="Image">
+
+            </div>
+            <!-- detail box -->
+            <div class="detail">
+                <Div class="btn-layer">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                </Div>
+                <!-- address  -->
+                <div class="type">
+                    <a href="#">Mumbai</a>
+                    <span>BKC</span>
+                </div>
+                <a href="#" class="price">Price $25</a>
+
+            </div>
+            <!-- <Div class="btn-layer">
+                <a href="#" class="buy-btn">Buy Now</a>
+            </Div> -->
+        </div>
+        <!-- 8 content  -->
+        <div class="box">
+            <div class="img-box">
+                <img src="img/img7.jpg" alt="Image">
+
+            </div>
+            <!-- detail box -->
+            <div class="detail">
+                <Div class="btn-layer">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                </Div>
+                <!-- address  -->
+                <div class="type">
+                    <a href="#">Mumbai</a>
+                    <span>BKC</span>
+                </div>
+                <a href="#" class="price">Price $25</a>
+
+            </div>
+            <!-- <Div class="btn-layer">
+                <a href="#" class="buy-btn">Buy Now</a>
+            </Div> -->
+        </div>
+
+    </section>
+
+</body>
+
+</html>
