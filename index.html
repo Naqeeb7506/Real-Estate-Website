@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Webpage</title>
+</head>
+<style>
+    
+   *{
+       margin: 0px;
+       padding: 0px;
+       box-sizing: border-box;
+   }
+    /* CSS property For header part */
+
+    header{
+        background-color: rgba(0, 0, 0);
+        /* position: fixed; */
+        height: 65px;
+        overflow: hidden;
+        width: 100%;
+    }
+    .left-container{
+        /* border: 2px solid black; */
+        position: absolute;
+        display: inline-block;
+        left: 15px; 
+        top: 5px;
+
+    }
+    .mid-container{
+        /* border: 2px solid red; */
+        width: 34%;
+        margin: 24px auto;
+        display: block;
+        
+    }
+    .right-container{
+        /* border: 2px solid yellow; */
+        position: absolute;
+        display: inline-block;
+        right: 15px;
+        top: 25px;  
+        width: 18%;  
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .nav-item{
+        display: inline-block;
+        font-size: 20px;
+        
+    }
+    .nav-link{
+        color: white;
+        text-decoration: none;
+        padding: 5px 20px;
+        background-color: black;
+        border-radius: 10px;
+        border-radius: 2px solid yellow;
+        margin: auto 10px;
+
+    }
+    .active, .nav-link:hover{
+        color: black;
+        /* border: 2px solid grey; */
+        /* border-radius: 10px; */
+        background-color: white;
+    }
+    /* CSS For Logo  */
+    .logo{
+        color: white;
+        text-decoration: none;
+        font-size: 45px;
+        padding: auto 15px;
+        margin: 0px 0px;
+
+    }
+    .logoclr{
+        color:rgba(35, 167, 167, 0.849);
+
+    }
+    /* CSS Property Image and Text Container Section */
+    section{
+        /* border: 2px solid black; */
+        display: flex;
+    }
+    .textContainer{
+        width: 50%;
+
+    }
+    .text{
+        /* border: 2px solid green; */
+        width: 500px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 150px;
+        /* display: flex; */
+    }
+    .text h2{
+        color: #19b51f;
+        font-size: 40px;
+        margin: auto;
+        width: 350px;
+        text-align: center;
+        /* background-color: silver; */
+    }
+    .text p{
+        color: #ff00b1;;
+        font-size: 20px;
+    }
+    .imgcontainer{
+        /* border: 2px solid red; */
+        float: right;
+        width: 50%;
+        height: 460px;
+    }
+    .imgcontainer .img img{
+        margin-left: 50px;
+        animation: change 3s infinite ease-in-out;
+        /* margin-top: 25px; */
+        /* border: 2px solid red; */
+        width: 600px;
+        /* background-color: red; */
+
+    }
+    @keyframes change{
+        0%{
+            transform: translate(0,0);
+        }
+        50%{
+            transform: translate(0,15px);
+        }
+        100%{
+            transform: translate(0,0);
+        }
+    }
+    .top{
+        background-color: #a7fff0;;
+        width: 100%;
+        height: 650px;
+    }
+    @keyframes build{
+        0%{
+            background-image: url("img/logo.jpg");
+        }
+        15%{
+            background-image: url("img/logo1.png");
+        }
+        30%{
+            background-image: url("img/logo2.png");
+        }
+        45%{
+            background-image: url("img/logo4.jfif");
+        }
+        60%{
+            background-image: url("img/logo5.png");
+        }
+        75%{
+            background-image: url("img/logo6.png");
+        }
+        90%{
+            background-image: url("img/img14.jpg");
+        }
+        100%{
+            background-image: url("img/img15.jpg");
+        }
+    }
+
+</style>
+<body>
+    <!-- header Part  -->
+    <header>
+        <div class="left-container">
+            <a href="index.html" class="logo">Real<span class="logoclr">Estate</span></a>
+
+        </div>
+        <div class="mid-container">
+            <nav class="nav-menu">
+                <ul class="navbar">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="right-container">
+            <ul>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link" id="login">Logn In</a>
+                </li>
+                <li class="nav-item">
+                    <a href="signup.html" class="nav-link" id="Signup">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- Image Section With Text Content -->
+    <section class="top">
+        <div class="textContainer">
+            <div class="text">
+                <h2>Real Estate Website</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint enim adipisci quos corrupti. Eius mollitia reprehenderit aliquam, debitis nesciunt in!</p>
+            </div>  
+        </div>
+        <div class="imgcontainer">
+            <div class="img">
+                <img src="img/logo6.jpg" class="" alt="Somethiong Wrong">
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
